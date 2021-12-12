@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fraunces:wght@500&display=swap');
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	scroll-behavior: smooth;
+}
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	width: 100%;
+	height: 100%;
+}
+body > header
+{
+	height: 100%;
+	width: 100%;
+	background-image: url("images/desktop/image-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+header > main
+{
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header > main > nav
+{
+	display: flex;
+	flex-direction: row;
+	column-gap: 30px;
+	align-items: center;
+	margin-right: 1%;
+}
+.typical-button
+{
+	text-decoration: none;
+	color: white;
+}
+.special-button
+{
+	text-decoration: none;
+	color: black;
+	padding: 5% 7% 5% 7%;
+	background-color: white;
+	border-radius: 40px;
+	font-weight: 700;
+}
+.special-button:hover
+{
+	background-color: LightBlue;
+	color: white;
+}
+.header-text
+{
+	position: absolute;
+	color: white;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: 400%;
+}
+header > a
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.first-four-squares
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-areas: 'article1 picture1' 'picture2 article2';
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+
+}
+#first-a
+{
+	grid-area: article1;
+	background-color: white;
+	position: relative;
+	justify-content: center;
+}
+#first-a > div,
+#second-a > div
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+#second-a
+{
+	grid-area: article2;
+	background-color: white;
+	position: relative;
+	justify-content: center;
+}
+.article-header
+{
+	font-family: 'Fraunces', serif;
+	font-size: 200%;
+	font-weight: 700;
+}
+.first-four-squares  article  a
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 150%;
+	border-bottom: 10px solid yellow;
+	border-radius: 5px;
+	width: fit-content;
+	color: black;
+	line-height: 15px;
+}
+#first-p
+{
+	grid-area: picture1;
+}
+#first-p > img
+{
+	width: 100%;
+	height: 100%;
+}
+#second-p
+{
+	grid-area: picture2;
+}
+#first-p > img,
+#second-p > img
+{
+	width: 100%;
+	height: 100%;
+}
+.second-section
+{
+	display: grid;
+	width: 100%;
+	height: 50%;
+	grid-template-areas: "article1 article2";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+}
+.second-section img
+{
+	width: 100%;
+	height: 100%;
+}
+.second-section .first-a
+{
+	grid-area: article1;
+	position: relative;
+}
+.second-section .second-a
+{
+	grid-area: article2;
+	position: relative;
+}
+.second-section div
+{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 30px;
+}
+.second-section p 
+{
+	text-align: center;
+}
+.second-section .header
+{
+	font-size: 200%;
+	font-weight: bold;
+}
+.clients
+{
+	width: 100%;
+	height: 70%;
+	background-color: white;
+}
+.clients h2
+{
+	font-size: 150%;
+	font-weight: bold;
+	color: #916062;
+	text-align: center;
+	padding-top: 6%;
+}
+.clients .main-container
+{
+	width: 100%;
+	height: fit-content;
+	padding: 5% 4% 10% 4%;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+	justify-content: center;
+}
+.clients > .main-container > .container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+
+}
+.clients > .main-container > .container > img
+{
+	width: 15%;
+	height: 32%;
+	border-radius: 50%;
+}
+.clients > .main-container > .container > .description
+{
+	text-align: center;
+	font-size: 120%;
+	font-weight: 500;
+	color: #545244;
+}
+.clients > .main-container > .container > .fullname
+{
+	color: black;
+	font-weight: 900;
+	font-size: 130%;
+}
+.clients > .main-container > .container > .role
+{
+	color: #A87830;
+	font-weight: bold;
+}
+footer
+{
+	width: 100%;
+	height: 100%;
+	background-color: #89BD90;
+}
+footer > section
+{
+	width: 100%;
+	height: 50%;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 100%;
+}
+footer > section > img
+{
+	width: 100%;
+	height: 100%;
+}
+footer > footer
+{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+footer > footer > img
+{
+	width: 15%;
+	height: 10%;
+}
+footer > nav > a
+{
+	display: block;
+	text-decoration: none;
+	color: #336B39;
+	font-weight: 900;
+	font-size: 120%;
+}
+footer > nav > a:hover
+{
+	color: white;
+}
+footer > nav
+{
+	display: flex;
+	flex-direction: row;
+	column-gap: 50px;
+}
+footer > div
+{
+	display: flex;
+	column-gap: 40px;
+}
